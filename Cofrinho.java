@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ex1Cofrinho {
 
 	public static void main(String[] args) {
-		Scanner banana = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		
 		double umCentavo = 0, moedaCinco = 0, moedaDez = 0, moedaVinteCinco = 0, moedaCinquenta = 0, poupanca = 0;
 		int resp, moeda, moedaUm = 0;
@@ -16,47 +16,47 @@ public class Ex1Cofrinho {
 		do {
 		System.out.println("\n\n\nTipos de moedas que você pode inserir:\n\n1 - Um centavo (R$0,01);\n2 - Cinco centavos (R$0,05);\n3 - Dez centavos (R$0,10);\n4 - Vinte e cinco centavos (R$0,25);\n5 - Cinquenta centavos (R$0,50);\n6 - Um Real (R$1,00);\n7 - Sair.");
 		System.out.println("\nQual vai ser o tipo de moeda que você vai depositar?: ");
-		resp = banana.nextInt();
+		resp = sc.nextInt();
 		
 		switch(resp) {
 		case 1: 
 			System.out.println("Você vai adicionar quantas moedas de 1 centavo?: ");
-			moeda = banana.nextInt();
+			moeda = sc.nextInt();
 			umCentavo = moeda * 0.01;
 			poupanca += umCentavo;
 			continue;
 			
 		case 2: 
 			System.out.print("Você vai adicionar quantas moedas de 2 centavos?: ");
-			moeda = banana.nextInt();
+			moeda = sc.nextInt();
 			moedaCinco = moeda * 0.05;
 			poupanca += moedaCinco;
 			continue;
 			
 		case 3: 
 			System.out.print("Você vai adicionar quantas moedas de 10 centavos?: ");
-			moeda = banana.nextInt();
+			moeda = sc.nextInt();
 			moedaDez = moeda * 0.10;
 			poupanca += moedaDez;
 			continue;
 			
 		case 4: 
 			System.out.print("Você vai adicionar quantas moedas de 25 centavos?: ");
-			moeda = banana.nextInt();
+			moeda = sc.nextInt();
 			moedaVinteCinco = moeda * 0.25;
 			poupanca += moedaVinteCinco;
 			continue;
 			
 		case 5: 
 			System.out.print("Você vai adicionar quantas moedas de 50 centavos?: ");
-			moeda = banana.nextInt();
+			moeda = sc.nextInt();
 			moedaCinquenta = moeda * 0.50;
 			poupanca += moedaCinquenta;
 			continue;
 			
 		case 6: 
 			System.out.print("Você vai adicionar quantas moedas de 1 Real?: ");
-			moeda = banana.nextInt();
+			moeda = sc.nextInt();
 			moedaUm = moeda * 1;
 			poupanca += moedaUm;
 			continue;
